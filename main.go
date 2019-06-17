@@ -106,7 +106,6 @@ func dfs(g *Graph, anim *gif.GIF, v int) {
 
 	for i, vertex := range childs {
 		(*g)[v][i].Visit()
-		g.draw(anim)
 		dfs(g, anim, vertex.Num)
 	}
 }
